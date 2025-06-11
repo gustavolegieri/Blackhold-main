@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loja Blackhold</title>
+  <link href="css/nav.css" rel="stylesheet" />
+  <link href="css/loja.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="body-loja">
+  <div class="top-bar">
+    <div>🌐 pt-BR</div>
+    <div class="right-icons">
+      <div class="icon-login">
+        <img src="img/nav-img/login-de-usuario (2).png" alt="Login" class="Login" />
+        <a href="#">Login</a>
+      </div>
+      <div class="line"></div>
+      <img src="img/nav-img/nike 1.png" alt="EA" />
+      <img src="img/nav-img/red 1.png" alt="RED" />
+      <img src="img/nav-img/nvidia 1.png" alt="NVIDIA" />
+    </div>
+  </div>
+
+  <nav>
+    <img src="img/nav-img/blackhold.png" alt="Logo Blackhold" />
+    <a href="index.html">Home</a>
+    <a href="#noticias">Notícias</a>
+    <a href="elenco.html">Elenco</a>
+    <a href="proximosjogos.html">Tabela</a>
+    <a href="proximosjogos.html">Calendário</a>
+  </nav>
+
+  <main>
+    <section class="categoria">
+      <h2>CAMISETAS</h2>
+      <div class="produtos">
+
+        <div class="produto">
+          <img id="camiseta1" src="img/loja-img/camisa/camisapreta.png" alt="Camiseta 1" />
+          <div class="info">
+            <span class="preco">R$ 79,90</span>
+            <div class="cores-estrelas">
+              <div class="cores">
+                <span class="cor preta" onclick="trocarImagem('camiseta1', 'img/loja-img/camisa/camisapreta.png')"></span>
+                <span class="cor branca" onclick="trocarImagem('camiseta1', 'img/loja-img/camisa/camisabranca.png')"></span>
+                <span class="cor cinza" onclick="trocarImagem('camiseta1', 'img/loja-img/camisa/camisacinza.png')"></span>
+              </div>
+              <div class="estrelas" onclick="avaliar(this)">
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <main>
+    <section class="categoria">
+      <h2>BLUSAS</h2>
+      <div class="produtos">
+        <div class="produto">
+          <img id="blusa1" src="img/loja-img/blusa/blusa1.png" alt="blusa1" />
+          <div class="info">
+            <span class="preco">R$ 79,90</span>
+            <div class="cores-estrelas">
+              <div class="cores">
+                <span class="cor preta" onclick="trocarImagem('blusa1', 'img/loja-img/blusa/blusa1.png')"></span>
+                <span class="cor azul" onclick="trocarImagem('blusa1', 'img/loja-img/blusa/blusa2.png')"></span>
+              </div>
+              <div class="estrelas" onclick="avaliar(this)">
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <main>
+    <section class="categoria">
+      <h2>SHORTS</h2>
+      <div class="produtos">
+        <div class="produto">
+          <img id="shorts1" src="img/loja-img/shorts/shortspreto.png" alt="shorts1" />
+          <div class="info">
+            <span class="preco">R$ 79,90</span>
+            <div class="cores-estrelas">
+              <div class="cores">
+                <span class="cor preta" onclick="trocarImagem('shorts1', 'img/loja-img/shorts/shortspreto.png')"></span>
+                <span class="cor cinza" onclick="trocarImagem('shorts1', 'img/loja-img/shorts/shortscinza.png')"></span>
+                <span class="cor branca" onclick="trocarImagem('shorts1', 'img/loja-img/shorts/shortsbranco.png')"></span>
+              </div>
+              <div class="estrelas" onclick="avaliar(this)">
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <main>
+    <section class="categoria">
+      <h2>CALÇAS</h2>
+      <div class="produtos">
+        <div class="produto">
+          <img id="calca1" src="img/loja-img/calça/calcapreta.png" alt="calca1" />
+          <div class="info">
+            <span class="preco">R$ 79,90</span>
+            <div class="cores-estrelas">
+              <div class="cores">
+                <span class="cor preta" onclick="trocarImagem('calca1', 'img/loja-img/calça/calcapreta.png')"></span>
+                <span class="cor cinza" onclick="trocarImagem('calca1', 'img/loja-img/calça/calcacinza.png')"></span>
+                <span class="cor branca" onclick="trocarImagem('calca1', 'img/loja-img/calça/calcabranca.png')"></span>
+              </div>
+              <div class="estrelas" onclick="avaliar(this)">
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <script src="js/index/loja/trocar.js"></script>
+</body>
+</html>

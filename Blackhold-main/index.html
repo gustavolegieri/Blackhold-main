@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blackhold FC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="css/index.css" rel="stylesheet" />
+  <link href="css/nav.css" rel="stylesheet" />
+  
+</head>
+<style>
+      .banner {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('img/index-img/2.png') center/cover no-repeat;
+      text-align: center;
+      padding: 9rem 1rem;
+    }
+</style>
+<body class="body-index">
+  <div class="top-bar">
+    <div>🌐 pt-BR</div>
+    <div class="right-icons">
+      <div class="icon-login">
+        <img src="img/nav-img/login-de-usuario (2).png" alt="Login" class="Login" />
+        <a href="#">Login</a>
+      </div>
+      <div class="line"></div>
+      <img src="img/nav-img/nike 1.png" alt="EA" />
+      <img src="img/nav-img/red 1.png" alt="RED" />
+      <img src="img/nav-img/nvidia 1.png" alt="NVIDIA" />
+    </div>
+  </div>
+
+  <nav>
+    <img src="img/nav-img/blackhold.png" alt="NVIDIA" />
+    <a href="#">Home</a>
+    <a href="#noticias">Notícias</a>
+    <a href="elenco.html">Elenco</a>
+    <a href="proximosjogos.html">Tabela</a>
+    <a href="proximosjogos.html">Calendário</a>
+    <a href="loja.html">Loja</a>
+  </nav>
+
+  <section class="banner">
+    <div class="banner-content">
+      <img src="img/index-img/amigaveis 2.png" alt="Amistoso" />
+      <p><strong>Quarta-feira, 21/05</strong><br />Início 17:30</p>
+      <div class="matchup">
+        <div class="team reverse">
+          <img src="img/index-img/real.png" alt="Real Madrid" />
+          <strong>Real<br />Madrid</strong>
+        </div>
+        <strong>VS</strong>
+        <div class="team">
+          <img src="img/nav-img/blackhold.png" alt="Blackhold FC" />
+          <strong>Blackhold<br />FC</strong>
+        </div>
+      </div>
+      <div class="timer" id="countdown">00:00:00</div>
+    </div>
+  </section>
+
+  <section class="news-section" id="noticias">
+    <h2>NOTÍCIAS</h2>
+    <div class="carousel-wrapper">
+      <div class="arrow" onclick="scrollCarousel('carousel1', -1)">&#10094;</div>
+      <div class="carousel" id="carousel1">
+        <div class="carousel-track">
+          <div class="news-card">
+            <img src="img/index-img/1.png" alt="Nova camisa lançada" />
+            <div class="content">
+              <h3>Nova camisa lançada</h3>
+              <p>Parceria com Nike.</p>
+            </div>
+            <div class="overlay">Design exclusivo da camisa com tecnologia Nike Dri-FIT.</div>
+          </div>
+
+          <div class="news-card">
+            <img src="img/index-img/estadio.png" alt="Estádio novo" />
+            <div class="content">
+              <h3>Estádio novo</h3>
+              <p>Blackhold Arena inaugurada.</p>
+            </div>
+            <div class="overlay">Inauguração da arena com capacidade para 50 mil torcedores.</div>
+          </div>
+
+          <div class="news-card">
+            <img src="img/index-img/matchday.png" alt="Matchday" />
+            <div class="content">
+              <h3>Matchday</h3>
+              <p>Enfrenta Real Madrid sábado.</p>
+            </div>
+            <div class="overlay">Amistoso internacional contra o Real Madrid em casa.</div>
+          </div>
+
+          <div class="news-card">
+            <img src="img/index-img/contrato.png" alt="Just Sponsor It" />
+            <div class="content">
+              <h3>Just Sponsor It</h3>
+              <p>Contrato de 5 anos com Nike.</p>
+            </div>
+            <div class="overlay">A Nike se torna a fornecedora oficial de uniformes e materiais.</div>
+          </div>
+
+          <div class="news-card">
+            <img src="img/index-img/fifa.png" alt="Blackhold no FC25" />
+            <div class="content">
+              <h3>Blackhold no FC25</h3>
+              <p>Agora no game oficial.</p>
+            </div>
+            <div class="overlay">O time estará presente no jogo FC25 da EA Sports!</div>
+          </div>
+
+          <div class="news-card">
+            <img src="img/index-img/1.png" alt="Novos treinos" />
+            <div class="content">
+              <h3>Novos treinos</h3>
+              <p>Preparação moderna implantada.</p>
+            </div>
+            <div class="overlay">Nova metodologia de treinos baseada em análise de dados.</div>
+          </div>
+
+          <div class="news-card">
+            <img src="img/index-img/1.png" alt="Base reforçada" />
+            <div class="content">
+              <h3>Base reforçada</h3>
+              <p>Reforços sub-20 chegam.</p>
+            </div>
+            <div class="overlay">Novos talentos chegam para compor a equipe de base do clube.</div>
+          </div>
+
+          <div class="news-card">
+            <img src="img/index-img/1.png" alt="Time feminino" />
+            <div class="content">
+              <h3>Time feminino</h3>
+              <p>Início do projeto oficial.</p>
+            </div>
+            <div class="overlay">O Blackhold FC lança oficialmente sua equipe feminina!</div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow" onclick="scrollCarousel('carousel1', 1)">&#10095;</div>
+    </div>
+
+    <div class="carousel-wrapper">
+      <div class="arrow" onclick="scrollCarousel('carousel2', -1)">&#10094;</div>
+      <div class="carousel" id="carousel2">
+        <div class="carousel-track">
+          <div class="news-card">
+            <img src="img/index-img/2.png" alt="Nova contratação" />
+            <div class="content">
+              <h3>Nova contratação</h3>
+              <p>Meia vindo do exterior.</p>
+            </div>
+            <div class="overlay">Jogador jovem com grande potencial assina por 4 anos.</div>
+          </div>
+
+          <div class="news-card">
+            <img src="img/index-img/2.png" alt="Campanha social" />
+            <div class="content">
+              <h3>Campanha social</h3>
+              <p>Blackhold apoia educação.</p>
+            </div>
+            <div class="overlay">Projeto de apoio às escolas públicas da região.</div>
+          </div>
+
+          <div class="news-card">
+            <img src="img/index-img/2.png" alt="Treinador renovado" />
+            <div class="content">
+              <h3>Treinador renovado</h3>
+              <p>Contrato ampliado até 2027.</p>
+            </div>
+            <div class="overlay">Técnico mantém liderança e confiança da diretoria.</div>
+          </div>
+
+          <div class="news-card">
+            <img src="img/index-img/2.png" alt="Merchandising novo" />
+            <div class="content">
+              <h3>Merchandising novo</h3>
+              <p>Produtos exclusivos na loja.</p>
+            </div>
+            <div class="overlay">Linha de produtos lançada com camisas, bonés e acessórios.</div>
+          </div>
+
+          <div class="news-card">
+            <img src="img/index-img/2.png" alt="Recorde de público" />
+            <div class="content">
+              <h3>Recorde de público</h3>
+              <p>Maior público na temporada.</p>
+            </div>
+            <div class="overlay">Mais de 45 mil torcedores na última partida.</div>
+          </div>
+
+          <div class="news-card">
+            <img src="img/index-img/2.png" alt="Parceria com EA Sports" />
+            <div class="content">
+              <h3>Parceria com EA Sports</h3>
+              <p>Conteúdo exclusivo em jogos.</p>
+            </div>
+            <div class="overlay">Jogadores e uniformes do Blackhold FC em destaque.</div>
+          </div>
+
+          <div class="news-card">
+            <img src="img/index-img/2.png" alt="Campanha de sócios" />
+            <div class="content">
+              <h3>Campanha de sócios</h3>
+              <p>Novos benefícios para associados.</p>
+            </div>
+            <div class="overlay">Descontos em ingressos e loja oficial.</div>
+          </div>
+
+          <div class="news-card">
+            <img src="img/index-img/2.png" alt="Calendário 2025" />
+            <div class="content">
+              <h3>Calendário 2025</h3>
+              <p>Jogos confirmados até dezembro.</p>
+            </div>
+            <div class="overlay">Confira os jogos e datas oficiais do próximo ano.</div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow" onclick="scrollCarousel('carousel2', 1)">&#10095;</div>
+    </div>
+  </section>
+   <script src="js/index/countdow.js"></script>
+   <script src="js/index/carrosel.js"></script>
+</body>
+</html>

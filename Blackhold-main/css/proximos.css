@@ -1,0 +1,207 @@
+.body-proximos {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000000;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  justify-content: center;
+}
+
+.jogos {
+  flex: 2 1 600px;
+  min-width: 280px;
+  max-width: 100%;
+}
+
+.jogos h1 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid #4b0082;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.mes h2 {
+  margin-top: 2rem;
+  color: #cccccc;
+}
+
+.jogo {
+  background-color: #1c1c1e;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.jogo:hover {
+  transform: scale(1.03);
+}
+
+.descricao {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #aaaaaa;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.time img {
+  width: 32px;
+  height: 32px;
+}
+
+.hora {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffd700;
+  white-space: nowrap;
+}
+
+.placar-tabela {
+  flex: 1 1 300px;
+  min-width: 280px;
+  max-width: 100%;
+}
+
+.placar {
+  background-color: #2b2b2d;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.placar p {
+  margin: 0 0 0.5rem;
+  color: #aaaaaa;
+}
+
+.resultado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.gols {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.tabela {
+  background-color: #2b2b2d;
+  padding: 1rem;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.tabela h3 {
+  margin-top: 0;
+  color: #cccccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+  min-width: 300px;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.destaque {
+  background-color: #4b0082;
+}
+
+.detalhes-jogo {
+  display: none;
+  margin-top: 8px;
+  padding: 10px;
+  border: 1px solid #000000;
+  background: #1c1c1e;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .jogos, .placar-tabela {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: auto;
+  }
+
+  .hora {
+    font-size: 1.1rem;
+  }
+
+  .resultado {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .jogos h1 {
+    font-size: 2rem;
+  }
+
+  .hora {
+    font-size: 1rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+}
